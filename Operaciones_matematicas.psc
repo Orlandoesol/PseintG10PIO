@@ -1,5 +1,5 @@
-//	Haga un programa que realice un menú principal y realice las operaciones matemáticas básicas y complejas
-//	(potenciación, radicación, ecuación de primer grado)
+//	Haga un programa que realice un menÃº principal y realice las operaciones matemÃ¡ticas bÃ¡sicas y complejas
+//	(potenciaciÃ³n, radicaciÃ³n, ecuaciÃ³n de primer grado)
 
 Funcion resultado_suma <- Sumar ( num1, num2 )
 	Definir suma Como Entero
@@ -53,24 +53,24 @@ Algoritmo Operaciones_matematicas
 	Definir resp Como Caracter
 	Repetir
 		Limpiar Pantalla
-		Escribir "Menú principal"
+		Escribir "MenÃº principal"
 		Escribir "1 - SUMA "
 		Escribir "2 - RESTA "
-		Escribir "3 - MULTIPLICACIÓN "
-		Escribir "4 - DIVISIÓN "
+		Escribir "3 - MULTIPLICACIÃ“N "
+		Escribir "4 - DIVISIÃ“N "
 		Escribir "5 - POTENCIA "
 		Escribir "6 - RAIZ "
-		Escribir "7 - ECUACIÓN DE PRIMER GRADO "
+		Escribir "7 - ECUACIÃ“N DE PRIMER GRADO "
 		Escribir "8 - SALIR "
-		Escribir Sin Saltar "Escoja la opción: "
+		Escribir Sin Saltar "Escoja la opciÃ³n: "
 		Leer opc
 		Segun opc Hacer
 			1:
 				Repetir
 					Limpiar Pantalla
-					Escribir Sin Saltar "Número 1: "
+					Escribir Sin Saltar "NÃºmero 1: "
 					Leer num_1
-					Escribir Sin Saltar "Número 2: "
+					Escribir Sin Saltar "NÃºmero 2: "
 					Leer num_2
 					Escribir "La suma es: ",Sumar(num_1, num_2)
 					Escribir "Desea continuar (S/N)"
@@ -79,9 +79,9 @@ Algoritmo Operaciones_matematicas
 			2:
 				Repetir
 					Limpiar Pantalla
-					Escribir Sin Saltar "Número 1: "
+					Escribir Sin Saltar "NÃºmero 1: "
 					Leer num_1
-					Escribir Sin Saltar "Número 2: "
+					Escribir Sin Saltar "NÃºmero 2: "
 					Leer num_2
 					Escribir "La resta es: ",Restar(num_1, num_2)
 					Escribir "Desea continuar (S/N)"
@@ -90,22 +90,22 @@ Algoritmo Operaciones_matematicas
 			3:
 				Repetir
 					Limpiar Pantalla
-					Escribir Sin Saltar "Número 1: "
+					Escribir Sin Saltar "NÃºmero 1: "
 					Leer num_1
-					Escribir Sin Saltar "Número 2: "
+					Escribir Sin Saltar "NÃºmero 2: "
 					Leer num_2
-					Escribir "La multiplicación es: ",Multiplicar(num_1, num_2)
+					Escribir "La multiplicaciÃ³n es: ",Multiplicar(num_1, num_2)
 					Escribir "Desea continuar (S/N)"
 					Leer resp
 				Hasta Que ((resp = "n") o (resp = "N"))
 			4:
 				Repetir
 					Limpiar Pantalla
-					Escribir Sin Saltar "Número 1: "
+					Escribir Sin Saltar "NÃºmero 1: "
 					Leer num_1
-					Escribir Sin Saltar "Número 2: "
+					Escribir Sin Saltar "NÃºmero 2: "
 					Leer num_2
-					Escribir "La división es: ",Dividir(num_1, num_2)
+					Escribir "La divisiÃ³n es: ",Dividir(num_1, num_2)
 					Escribir "Desea continuar (S/N)"
 					Leer resp
 				Hasta Que ((resp = "n") o (resp = "N"))
@@ -127,7 +127,7 @@ Algoritmo Operaciones_matematicas
 					Leer num_1
 					Escribir Sin Saltar "Indice: "
 					Leer num_2
-					Escribir "La raíz es: ",Raices(num_1, num_2)
+					Escribir "La raÃ­z es: ",Raices(num_1, num_2)
 					Escribir "Desea continuar (S/N)"
 					Leer resp
 				Hasta Que ((resp = "n") o (resp = "N"))
@@ -138,15 +138,15 @@ Algoritmo Operaciones_matematicas
 					Leer num_1
 					Escribir Sin Saltar "B: "
 					Leer num_2
-					Escribir "La ecuación de primer grado es: ",Ec1(num_1, num_2)
+					Escribir "La ecuaciÃ³n de primer grado es: ",Ec1(num_1, num_2)
 					Escribir "Desea continuar (S/N)"
 					Leer resp
 				Hasta Que ((resp = "n") o (resp = "N"))
 			8:
 				Limpiar Pantalla
-				Escribir "Gracias por su atención"
+				Escribir "Gracias por su atenciÃ³n"
 			De Otro Modo:
-				Escribir "Opción incorrecta, intente de nuevo!"
+				Escribir "OpciÃ³n incorrecta, intente de nuevo!"
 		Fin Segun
 	Hasta Que (opc = 8)
 FinAlgoritmo
